@@ -11,3 +11,8 @@ Run a Linux commnad on multiple servers from a single command/loop
 Copy SSH keys to a Linux server so you don't have to type password.
 
   ssh-copy-id IP
+
+Delete similar name folders - list & delete
+
+  sudo find  /home/ -name "2014*" -ls
+  sudo find /home/ -name "2014*" -exec rm -rf {} \;
